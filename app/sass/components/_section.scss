@@ -1,0 +1,100 @@
+
+@use '../inc/vars' as *;
+.section {
+  overflow: hidden;
+  border-radius: 30px;
+  box-shadow: $box-shadow;
+	display: flex;
+	flex-direction: column;
+	background-color: $light;
+	min-height: 360px;
+  &__header {
+		flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 38px 20px;
+		@media(max-width: $xl){
+		
+		}
+		@media(max-width: $lg){
+			padding: 30px 30px 20px;
+		}
+		@media(max-width: $md){
+			padding: 15px 15px 0px;
+		}
+		@media(max-width: $sm){
+		
+		}
+		@media(max-width: $xs){
+		
+		}
+		
+  }
+  &__header-main {
+
+  }
+  &__title {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -0.22px;
+    margin-bottom: 8px;
+  }
+  &__subtitle {
+    color: $success-light;
+    &--active {
+
+    }
+  }
+	&__body {
+		height: 100%;
+    display: flex;
+    flex-direction: column;
+		overflow: hidden;
+	}
+
+	&__footer {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 30px 40px;
+
+		@media(max-width: $xl){
+		
+		}
+		@media(max-width: $lg){
+			padding: 30px 30px;
+		}
+		@media(max-width: $md){
+			flex-direction: column-reverse;
+			padding: 30px 15px;
+		}
+		@media(max-width: $sm){
+		
+		}
+		@media(max-width: $xs){
+		
+		}
+		
+		.showing-data {
+			color: $text-light-2;
+			font-weight: 500;
+			@media(max-width: $xl){
+			
+			}
+			@media(max-width: $lg){
+			
+			}
+			@media(max-width: $md){
+				text-align: center;
+			}
+			@media(max-width: $sm){
+			
+			}
+			@media(max-width: $xs){
+			
+			}
+			
+		}
+	}
+}

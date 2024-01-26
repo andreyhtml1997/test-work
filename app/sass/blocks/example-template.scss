@@ -1,0 +1,24 @@
+@use '../inc/vars' as *;
+
+.sectionName {
+  .container {
+
+  }
+  .section {
+    &__header {
+  
+    }
+    &__title {
+
+    }
+    &__header-additional {
+
+    }
+    &__subtitle {
+
+    }
+    &__body {
+      
+    }
+  }
+}

@@ -1,0 +1,93 @@
+.table {
+  font-weight: 500;
+  width: 100%;
+  border-bottom: 1px solid $text-light-2;
+  min-width: 800px;
+  &__text {
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 4px;
+    min-width: 80px;
+    display: inline-block;
+    &--active {
+      color: $success;
+      border-color: $success;
+      background-color: transparentize($success, 0.7);
+      text-align: center;
+    }
+    &--inactive {
+      color: $danger;
+      border-color: $danger;
+      background-color: transparentize($danger, 0.7);
+      text-align: center;
+    }
+  }
+  &__container {
+    height: 100%;
+    overflow: auto;
+    padding: 0 40px;
+    @media(max-width: $xl){
+    
+    }
+    @media(max-width: $lg){
+      padding: 0 30px;
+    }
+    @media(max-width: $md){
+      padding: 0 15px;
+    }
+    @media(max-width: $sm){
+    
+    }
+    @media(max-width: $xs){
+    
+    }
+    
+  }
+  thead {
+    position: sticky;
+    top: 0;
+    background-color: $light;
+    &::after {
+      content: '';
+      bottom: 0;
+      left: -40px;
+      right: -40px;
+      position: absolute;
+      height: 1px;
+      background: #EEEEEE;
+    }
+    tr {
+      color: $text-light-2;
+    }
+    th {
+      font-weight: 500;
+      text-align: left;
+      height: 49px;
+    }
+  }
+  tbody {
+    
+    tr {
+      border-bottom: 1px solid #eeeeee;      
+    }
+    td {
+      height: 69px;
+      @media(max-width: $xl){
+      
+      }
+      @media(max-width: $lg){
+      
+      }
+      @media(max-width: $md){
+        height: 59px;
+      }
+      @media(max-width: $sm){
+      
+      }
+      @media(max-width: $xs){
+      
+      }
+      
+    }
+  }
+}

@@ -1,0 +1,66 @@
+.pagination {
+  font-size: 12px;
+  font-weight: 500;
+  @media(max-width: $xl){
+  
+  }
+  @media(max-width: $lg){
+  
+  }
+  @media(max-width: $md){
+    margin-bottom: 15px;
+  }
+  @media(max-width: $sm){
+  
+  }
+  @media(max-width: $xs){
+  
+  }
+  
+  &__list {
+    display: flex;
+  }
+  &__list-el {
+    display: flex;
+    margin-right: 12px;
+    &:nth-of-type(5) {
+      @media(max-width: $xl){
+      
+      }
+      @media(max-width: $lg){
+      
+      }
+      @media(max-width: $md){
+        
+      }
+      @media(max-width: $sm){
+        display: none;
+      }
+      @media(max-width: $xs){
+      
+      }
+      
+    }
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+  &__list-link {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-width: 25px;
+    height: 24px;
+    padding: 0 5px;
+    border-radius: 4px;
+    display: flex;
+    color: $text;
+    border: 1px solid #EEE;
+    background: #F5F5F5;
+    &:hover, &.active {
+      background-color: $active;
+      color: $light;
+      border-color: $active;
+    }
+  }
+}

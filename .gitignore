@@ -1,0 +1,7 @@
+#Untrack folders
+node_modules/
+.idea/
+.history/
+
+
+

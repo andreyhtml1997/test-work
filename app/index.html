@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta charset="utf-8" />
+  	<title>Title</title>
+  	<meta name="description" content="" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  	<meta name="theme-color" content="#ffffff" />
+  	<meta name="msapplication-TileColor" content="#2b5797" />
+  	<meta name="msapplication-config" content="img/favicon/browserconfig.xml" />
+  	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
+  	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png" />
+  	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png" />
+  	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#eb6246" />
+  	<link rel="manifest" href="img/favicon/site.webmanifest" />
+  	<link rel="shortcut icon" href="img/favicon/favicon.ico" />
+  	<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  	<link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__header">
+        <a href="#" class="header__logo">
+          <img src="img/logo.svg" alt="logo">
+        </a>
+        <button class="header__toggle menu-toggle" type="button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <nav class="header__body">
+        <ul class="header__menu">
+          <li class="header__menu-el active">
+            <a href="#" class="header__menu-link">
+              <span class="header__menu-icon header__menu-icon--dashboard"></span>
+              <span class="header__menu-link-text">Dashboard</span>
+            </a>
+          </li>
+          <li class="header__menu-el">
+            <a href="#" class="header__menu-link">
+              <span class="header__menu-icon header__menu-icon--product"></span>
+              <span class="header__menu-link-text">Product</span>
+            </a>
+          </li>
+          <li class="header__menu-el">
+            <a href="#" class="header__menu-link">
+              <span class="header__menu-icon header__menu-icon--customers"></span>
+              <span class="header__menu-link-text">Customers</span>
+            </a>
+          </li>
+          <li class="header__menu-el">
+            <a href="#" class="header__menu-link">
+              <span class="header__menu-icon header__menu-icon--income"></span>
+              <span class="header__menu-link-text">Income</span>
+            </a>
+          </li>
+          <li class="header__menu-el">
+            <a href="#" class="header__menu-link">
+              <span class="header__menu-icon header__menu-icon--promote"></span>
+              <span class="header__menu-link-text">Promote</span>
+            </a>
+          </li>
+          <li class="header__menu-el">
+            <a href="#" class="header__menu-link">
+              <span class="header__menu-icon header__menu-icon--help"></span>
+              <span class="header__menu-link-text">Help</span>
+            </a>
+          </li>
+        </ul>
+        <a href="#" class="user-element">
+          <span class="user-element__avatar-container">
+            <img src="img/man.jpg" alt="user avatar" class="user-element__avatar">
+          </span>
+          <span class="user-element__text">
+            <span class="user-element__name">Evano</span>
+            <span class="user-element__post">Project Manager</span>
+          </span>
+        </a>
+      </nav>
+    </header>
+    <div class="header__bg menu-toggle"></div>
+    <main class="content">
+      <p class="content__title">Hello Evano 👋🏼,</p>
+      <section class="section">
+        <div class="section__header">
+          <div class="section__header-main">
+            <h1 class="section__title">All Customers</h1>
+            <p class="section__subtitle section__subtitle--active">Active Members</p>
+          </div>
+          <form action="#" class="form form--search">
+            <input type="text" placeholder="Search" required>
+          </form>
+        </div>
+        <div class="section__body">
+          <div class="table__container">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th><p class="table__text">Customer Name</p></th>
+                  <th><p class="table__text">Company</p></th>
+                  <th><p class="table__text">Phone Number</p></th>
+                  <th><p class="table__text">Email</p></th>
+                  <th><p class="table__text">Country</p></th>
+                  <th><p class="table__text">Status</p></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <p class="table__text">Jane Cooper</p>
+                  </td>
+                  <td>
+                    <p class="table__text">Microsoft</p>
+                  </td>
+                  <td>
+                    <p class="table__text">(225) 555-0118</p>
+                  </td>
+                  <td>
+                    <p class="table__text">jane@microsoft.com</p>
+                  </td>
+                  <td>
+                    <p class="table__text">United States</p>
+                  </td>
+                  <td>
+                    <p class="table__text table__text--active">Active</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="table__text">Jane Cooper</p>
+                  </td>
+                  <td>
+                    <p class="table__text">Microsoft</p>
+                  </td>
+                  <td>
+                    <p class="table__text">(225) 555-0118</p>
+                  </td>
+                  <td>
+                    <p class="table__text">jane@microsoft.com</p>
+                  </td>
+                  <td>
+                    <p class="table__text">United States</p>
+                  </td>
+                  <td>
+                    <p class="table__text table__text--inactive">Inactive</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="table__text">Jane Cooper</p>
+                  </td>
+                  <td>
+                    <p class="table__text">Microsoft</p>
+                  </td>
+                  <td>
+                    <p class="table__text">(225) 555-0118</p>
+                  </td>
+                  <td>
+                    <p class="table__text">jane@microsoft.com</p>
+                  </td>
+                  <td>
+                    <p class="table__text">United States</p>
+                  </td>
+                  <td>
+                    <p class="table__text table__text--active">Active</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="table__text">Jane Cooper</p>
+                  </td>
+                  <td>
+                    <p class="table__text">Microsoft</p>
+                  </td>
+                  <td>
+                    <p class="table__text">(225) 555-0118</p>
+                  </td>
+                  <td>
+                    <p class="table__text">jane@microsoft.com</p>
+                  </td>
+                  <td>
+                    <p class="table__text">United States</p>
+                  </td>
+                  <td>
+                    <p class="table__text table__text--inactive">Inactive</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="table__text">Jane Cooper</p>
+                  </td>
+                  <td>
+                    <p class="table__text">Microsoft</p>
+                  </td>
+                  <td>
+                    <p class="table__text">(225) 555-0118</p>
+                  </td>
+                  <td>
+                    <p class="table__text">jane@microsoft.com</p>
+                  </td>
+                  <td>
+                    <p class="table__text">United States</p>
+                  </td>
+                  <td>
+                    <p class="table__text table__text--active">Active</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="table__text">Jane Cooper</p>
+                  </td>
+                  <td>
+                    <p class="table__text">Microsoft</p>
+                  </td>
+                  <td>
+                    <p class="table__text">(225) 555-0118</p>
+                  </td>
+                  <td>
+                    <p class="table__text">jane@microsoft.com</p>
+                  </td>
+                  <td>
+                    <p class="table__text">United States</p>
+                  </td>
+                  <td>
+                    <p class="table__text table__text--inactive">Inactive</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="table__text">Jane Cooper</p>
+                  </td>
+                  <td>
+                    <p class="table__text">Microsoft</p>
+                  </td>
+                  <td>
+                    <p class="table__text">(225) 555-0118</p>
+                  </td>
+                  <td>
+                    <p class="table__text">jane@microsoft.com</p>
+                  </td>
+                  <td>
+                    <p class="table__text">United States</p>
+                  </td>
+                  <td>
+                    <p class="table__text table__text--active">Active</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="table__text">Jane Cooper</p>
+                  </td>
+                  <td>
+                    <p class="table__text">Microsoft</p>
+                  </td>
+                  <td>
+                    <p class="table__text">(225) 555-0118</p>
+                  </td>
+                  <td>
+                    <p class="table__text">jane@microsoft.com</p>
+                  </td>
+                  <td>
+                    <p class="table__text">United States</p>
+                  </td>
+                  <td>
+                    <p class="table__text table__text--inactive">Inactive</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="table__text">Jane Cooper</p>
+                  </td>
+                  <td>
+                    <p class="table__text">Microsoft</p>
+                  </td>
+                  <td>
+                    <p class="table__text">(225) 555-0118</p>
+                  </td>
+                  <td>
+                    <p class="table__text">jane@microsoft.com</p>
+                  </td>
+                  <td>
+                    <p class="table__text">United States</p>
+                  </td>
+                  <td>
+                    <p class="table__text table__text--active">Active</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="table__text">Jane Cooper</p>
+                  </td>
+                  <td>
+                    <p class="table__text">Microsoft</p>
+                  </td>
+                  <td>
+                    <p class="table__text">(225) 555-0118</p>
+                  </td>
+                  <td>
+                    <p class="table__text">jane@microsoft.com</p>
+                  </td>
+                  <td>
+                    <p class="table__text">United States</p>
+                  </td>
+                  <td>
+                    <p class="table__text table__text--inactive">Inactive</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="table__text">Jane Cooper</p>
+                  </td>
+                  <td>
+                    <p class="table__text">Microsoft</p>
+                  </td>
+                  <td>
+                    <p class="table__text">(225) 555-0118</p>
+                  </td>
+                  <td>
+                    <p class="table__text">jane@microsoft.com</p>
+                  </td>
+                  <td>
+                    <p class="table__text">United States</p>
+                  </td>
+                  <td>
+                    <p class="table__text table__text--active">Active</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="table__text">Jane Cooper</p>
+                  </td>
+                  <td>
+                    <p class="table__text">Microsoft</p>
+                  </td>
+                  <td>
+                    <p class="table__text">(225) 555-0118</p>
+                  </td>
+                  <td>
+                    <p class="table__text">jane@microsoft.com</p>
+                  </td>
+                  <td>
+                    <p class="table__text">United States</p>
+                  </td>
+                  <td>
+                    <p class="table__text table__text--inactive">Inactive</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="table__text">Jane Cooper</p>
+                  </td>
+                  <td>
+                    <p class="table__text">Microsoft</p>
+                  </td>
+                  <td>
+                    <p class="table__text">(225) 555-0118</p>
+                  </td>
+                  <td>
+                    <p class="table__text">jane@microsoft.com</p>
+                  </td>
+                  <td>
+                    <p class="table__text">United States</p>
+                  </td>
+                  <td>
+                    <p class="table__text table__text--active">Active</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="table__text">Jane Cooper</p>
+                  </td>
+                  <td>
+                    <p class="table__text">Microsoft</p>
+                  </td>
+                  <td>
+                    <p class="table__text">(225) 555-0118</p>
+                  </td>
+                  <td>
+                    <p class="table__text">jane@microsoft.com</p>
+                  </td>
+                  <td>
+                    <p class="table__text">United States</p>
+                  </td>
+                  <td>
+                    <p class="table__text table__text--inactive">Inactive</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="table__text">Jane Cooper</p>
+                  </td>
+                  <td>
+                    <p class="table__text">Microsoft</p>
+                  </td>
+                  <td>
+                    <p class="table__text">(225) 555-0118</p>
+                  </td>
+                  <td>
+                    <p class="table__text">jane@microsoft.com</p>
+                  </td>
+                  <td>
+                    <p class="table__text">United States</p>
+                  </td>
+                  <td>
+                    <p class="table__text table__text--active">Active</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="table__text">Jane Cooper</p>
+                  </td>
+                  <td>
+                    <p class="table__text">Microsoft</p>
+                  </td>
+                  <td>
+                    <p class="table__text">(225) 555-0118</p>
+                  </td>
+                  <td>
+                    <p class="table__text">jane@microsoft.com</p>
+                  </td>
+                  <td>
+                    <p class="table__text">United States</p>
+                  </td>
+                  <td>
+                    <p class="table__text table__text--inactive">Inactive</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="table__text">Jane Cooper</p>
+                  </td>
+                  <td>
+                    <p class="table__text">Microsoft</p>
+                  </td>
+                  <td>
+                    <p class="table__text">(225) 555-0118</p>
+                  </td>
+                  <td>
+                    <p class="table__text">jane@microsoft.com</p>
+                  </td>
+                  <td>
+                    <p class="table__text">United States</p>
+                  </td>
+                  <td>
+                    <p class="table__text table__text--active">Active</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="table__text">Jane Cooper</p>
+                  </td>
+                  <td>
+                    <p class="table__text">Microsoft</p>
+                  </td>
+                  <td>
+                    <p class="table__text">(225) 555-0118</p>
+                  </td>
+                  <td>
+                    <p class="table__text">jane@microsoft.com</p>
+                  </td>
+                  <td>
+                    <p class="table__text">United States</p>
+                  </td>
+                  <td>
+                    <p class="table__text table__text--inactive">Inactive</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="table__text">Jane Cooper</p>
+                  </td>
+                  <td>
+                    <p class="table__text">Microsoft</p>
+                  </td>
+                  <td>
+                    <p class="table__text">(225) 555-0118</p>
+                  </td>
+                  <td>
+                    <p class="table__text">jane@microsoft.com</p>
+                  </td>
+                  <td>
+                    <p class="table__text">United States</p>
+                  </td>
+                  <td>
+                    <p class="table__text table__text--active">Active</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="table__text">Jane Cooper</p>
+                  </td>
+                  <td>
+                    <p class="table__text">Microsoft</p>
+                  </td>
+                  <td>
+                    <p class="table__text">(225) 555-0118</p>
+                  </td>
+                  <td>
+                    <p class="table__text">jane@microsoft.com</p>
+                  </td>
+                  <td>
+                    <p class="table__text">United States</p>
+                  </td>
+                  <td>
+                    <p class="table__text table__text--inactive">Inactive</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="table__text">Jane Cooper</p>
+                  </td>
+                  <td>
+                    <p class="table__text">Microsoft</p>
+                  </td>
+                  <td>
+                    <p class="table__text">(225) 555-0118</p>
+                  </td>
+                  <td>
+                    <p class="table__text">jane@microsoft.com</p>
+                  </td>
+                  <td>
+                    <p class="table__text">United States</p>
+                  </td>
+                  <td>
+                    <p class="table__text table__text--active">Active</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="table__text">Jane Cooper</p>
+                  </td>
+                  <td>
+                    <p class="table__text">Microsoft</p>
+                  </td>
+                  <td>
+                    <p class="table__text">(225) 555-0118</p>
+                  </td>
+                  <td>
+                    <p class="table__text">jane@microsoft.com</p>
+                  </td>
+                  <td>
+                    <p class="table__text">United States</p>
+                  </td>
+                  <td>
+                    <p class="table__text table__text--inactive">Inactive</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="table__text">Jane Cooper</p>
+                  </td>
+                  <td>
+                    <p class="table__text">Microsoft</p>
+                  </td>
+                  <td>
+                    <p class="table__text">(225) 555-0118</p>
+                  </td>
+                  <td>
+                    <p class="table__text">jane@microsoft.com</p>
+                  </td>
+                  <td>
+                    <p class="table__text">United States</p>
+                  </td>
+                  <td>
+                    <p class="table__text table__text--active">Active</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="table__text">Jane Cooper</p>
+                  </td>
+                  <td>
+                    <p class="table__text">Microsoft</p>
+                  </td>
+                  <td>
+                    <p class="table__text">(225) 555-0118</p>
+                  </td>
+                  <td>
+                    <p class="table__text">jane@microsoft.com</p>
+                  </td>
+                  <td>
+                    <p class="table__text">United States</p>
+                  </td>
+                  <td>
+                    <p class="table__text table__text--inactive">Inactive</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="table__text">Jane Cooper</p>
+                  </td>
+                  <td>
+                    <p class="table__text">Microsoft</p>
+                  </td>
+                  <td>
+                    <p class="table__text">(225) 555-0118</p>
+                  </td>
+                  <td>
+                    <p class="table__text">jane@microsoft.com</p>
+                  </td>
+                  <td>
+                    <p class="table__text">United States</p>
+                  </td>
+                  <td>
+                    <p class="table__text table__text--active">Active</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="table__text">Jane Cooper</p>
+                  </td>
+                  <td>
+                    <p class="table__text">Microsoft</p>
+                  </td>
+                  <td>
+                    <p class="table__text">(225) 555-0118</p>
+                  </td>
+                  <td>
+                    <p class="table__text">jane@microsoft.com</p>
+                  </td>
+                  <td>
+                    <p class="table__text">United States</p>
+                  </td>
+                  <td>
+                    <p class="table__text table__text--inactive">Inactive</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="table__text">Jane Cooper</p>
+                  </td>
+                  <td>
+                    <p class="table__text">Microsoft</p>
+                  </td>
+                  <td>
+                    <p class="table__text">(225) 555-0118</p>
+                  </td>
+                  <td>
+                    <p class="table__text">jane@microsoft.com</p>
+                  </td>
+                  <td>
+                    <p class="table__text">United States</p>
+                  </td>
+                  <td>
+                    <p class="table__text table__text--active">Active</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="table__text">Jane Cooper</p>
+                  </td>
+                  <td>
+                    <p class="table__text">Microsoft</p>
+                  </td>
+                  <td>
+                    <p class="table__text">(225) 555-0118</p>
+                  </td>
+                  <td>
+                    <p class="table__text">jane@microsoft.com</p>
+                  </td>
+                  <td>
+                    <p class="table__text">United States</p>
+                  </td>
+                  <td>
+                    <p class="table__text table__text--inactive">Inactive</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+           </div>
+          <div class="section__footer">
+          
+            <p class="showing-data">Showing data 1 to 8 of  256K entries</p>
+            <nav class="pagination">
+              <ul class="pagination__list">
+                <li class="pagination__list-el">
+                  <a href="#" class="pagination__list-link"> &lt; </a>
+                </li>
+                <li class="pagination__list-el">
+                  <a href="#" class="pagination__list-link active">1</a>
+                </li>
+                <li class="pagination__list-el">
+                  <a href="#" class="pagination__list-link">2</a>
+                </li>
+                <li class="pagination__list-el">
+                  <a href="#" class="pagination__list-link">3</a>
+                </li>
+                <li class="pagination__list-el">
+                  <a href="#" class="pagination__list-link">4</a>
+                </li>
+                <li class="pagination__list-el">
+                  <a href="#" class="pagination__list-link">...</a>
+                </li>
+                <li class="pagination__list-el">
+                  <a href="#" class="pagination__list-link">40</a>
+                </li>
+                <li class="pagination__list-el">
+                  <a href="#" class="pagination__list-link">></a>
+                </li>
+
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>

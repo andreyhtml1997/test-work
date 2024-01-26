@@ -1,0 +1,50 @@
+
+@use '../inc/vars' as *;
+
+
+.content {
+  margin-left: 306px;
+  padding: 41px 95px 41px 71px;
+  height: 100vh;
+  //overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  @media(max-width: $xl){
+  
+  }
+  @media(max-width: $lg){
+    padding: 30px;
+  }
+  @media(max-width: $md){
+    margin-left: 0;
+    padding: 15px;
+  }
+  @media(max-width: $sm){
+  
+  }
+  @media(max-width: $xs){
+  
+  }
+  
+  &__title {
+    margin-bottom: 51px;
+    font-size: 24px;
+    font-weight: 500;
+    @media(max-width: $xl){
+    
+    }
+    @media(max-width: $lg){
+      margin-bottom: 20px;
+    }
+    @media(max-width: $md){
+      
+    }
+    @media(max-width: $sm){
+    
+    }
+    @media(max-width: $xs){
+    
+    }
+    
+  }
+}

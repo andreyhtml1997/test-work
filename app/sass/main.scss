@@ -1,0 +1,85 @@
+@use 'inc' as *;
+html {
+	// overflow-x: hidden;
+	min-height: 100vh;
+}
+body {
+	background-color: #FAFBFF;
+	color: $text;
+	font-size: 14px;
+	font-family: $mainFont;
+	font-weight: normal;
+	font-style: normal;
+	// width: 100vw;
+	overflow-x: hidden;
+	min-height: 100vh;
+	line-height: 1.5;
+	@media(max-width: $xl){
+	
+	}
+	@media(max-width: $lg){
+	
+	}
+	@media(max-width: $md){
+		
+	}
+	@media(max-width: $sm){
+	
+	}
+	@media(max-width: $xs){
+	
+	}
+	
+	&.ovf_hidden {
+		overflow: hidden;
+	}
+}
+
+.container {
+	max-width: 1500px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 25px;
+	// display: flex;
+	// align-items: flex-start;
+  // flex-wrap: wrap;
+	// justify-content: flex-start;
+	
+}
+.overflow-hidden {
+	overflow: hidden !important;
+}
+main {
+	position: relative;
+}
+
+
+
+[data-aos="swipe-horizontal"] {
+  width: 0;
+  transition-property: width;
+  &.aos-animate {
+    width: 100%;
+  }
+}
+
+
+
+
+
+//components
+@import 'components';
+
+//header & common
+@import 'parts/header';
+@import 'parts/layout';
+
+//pages
+@import 'pages/page';
+
+
+//footer
+@import 'parts/footer';
+
+
+
